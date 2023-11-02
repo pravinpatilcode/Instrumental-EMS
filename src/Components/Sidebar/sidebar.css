@@ -1,0 +1,63 @@
+.sidebar {
+    width: 12%;
+    height: 100vh;
+    padding: 20px;
+    border: 1px solid gray;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #f7ff05;
+    padding: 9px;
+    padding-left: 20px;
+
+    
+
+  }
+.icon{
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.icon-fixes {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.icon-fixes.active {
+  background-color: rgb(230, 28, 28);
+  color: #000;
+}
+
+
+  li:hover {
+    background-color:#333;
+    border-radius: 5px;
+  }
+  .main_music_text{
+    font-size: 25px;
+  }
+  .main_music{
+    width: auto;
+    height: 25px;
+    padding-top: 18px;
+    margin-bottom: -10px;
+    
+}
+
+.main_Instrumental{
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+  justify-content: center;
+  font-family:'Times New Roman', Times, serif;
+}
+

@@ -1,0 +1,69 @@
+.card-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: 400px;
+    border: solid 1px #2a2a23;
+    margin-left: 30px;
+    margin-top: 25px;
+    /* background: rgb(0,0,0);
+background: linear-gradient(60deg, rgba(0,0,0,1) 20%, rgba(64,71,1,1) 42%); */
+    height: 150px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .flex_card{display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+  }
+ 
+  
+  .indicator{
+    margin-left: 15px;
+  }
+  .yellow-button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: end;
+    height: 34px;
+    padding: 0 24px;
+    margin-right: 10px;
+    margin-bottom: -30px;
+  }
+  .number{
+    font-size: 60px;
+
+  }
+
+  .card_gradiant1{
+    background: rgb(0,0,0);
+    background: linear-gradient(60deg, rgba(0,0,0,1) 80%, rgb(199, 217, 35) 130%);
+  }
+  .card_gradiant2{
+    background: rgb(0,0,0);
+    background: linear-gradient(60deg, rgba(0,0,0,1) 80%, rgb(13, 129, 155) 130%);
+  }
+  .card_gradiant3{
+    background: rgb(0,0,0);
+    background: linear-gradient(60deg, rgba(0,0,0,1) 80%, rgb(140, 140, 140) 130%);
+  }
+
+  
