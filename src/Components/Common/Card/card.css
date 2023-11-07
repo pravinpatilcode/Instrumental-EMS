@@ -4,9 +4,9 @@
   }
   
   .card {
-    width: 400px;
+    width: 340px;
     border: solid 1px #2a2a23;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     margin-top: 25px;
     /* background: rgb(0,0,0);
 background: linear-gradient(60deg, rgba(0,0,0,1) 20%, rgba(64,71,1,1) 42%); */
@@ -15,6 +15,7 @@ background: linear-gradient(60deg, rgba(0,0,0,1) 20%, rgba(64,71,1,1) 42%); */
     border-radius: 8px;
     padding: 6px;
     display: flex;
+    gap:"10px";
     flex-direction: column;
     justify-content: space-between;
   }
@@ -67,3 +68,20 @@ background: linear-gradient(60deg, rgba(0,0,0,1) 20%, rgba(64,71,1,1) 42%); */
   }
 
   
+  
+/* 
+{props.btnName === 'Add Artist' && (
+  <Link to="addartist">
+    <button className="yellow-button"> {props.btnName}</button>
+  </Link>
+)} 
+{props.btnName === 'Withdrow' && (
+  <Link to="#">
+    <button className="yellow-button"> {props.btnName}</button>
+  </Link>
+)} 
+{props.btnName === 'Start Here' && (
+  <Link to="#">
+    <button className="yellow-button"> {props.btnName}</button>
+  </Link>
+)}  */

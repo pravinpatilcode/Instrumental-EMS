@@ -1,0 +1,119 @@
+.addartist{
+    margin-left: 20px;
+}
+.artist-p{
+    font-size: 12px;
+    margin-top: -15px;
+}
+.artist-h1{
+    color:rgb(64, 147, 225);
+}
+.flex-addrtist{
+    display: flex;
+}
+.image-addrtist{
+    width: 20%;
+    margin-top: 20px;
+    padding-left: 5%;
+
+}
+.foam-addrtist{
+    justify-content: center;
+}
+.camera-addrtist{
+    height: 120px;
+    width: 120px;
+    background-color: rgb(74, 72, 72);
+    border-radius: 50%;
+    justify-content: center;
+    margin: 15px;
+    display: flex;
+}
+.camera-height-addrtist{
+    height: 50px;
+    width: auto;
+    justify-content: center;
+    margin-top: 25%;
+}
+
+.yellow-color-addrtist{
+    color: yellow;
+    margin-left: 15px;
+}
+
+.radio-button-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .radiobt-label {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .radiobt-input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  
+.input_div_addartist{
+    display: grid;
+}
+
+.common_div_addartist{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 18px;
+}
+.yellow-radio {
+    color: yellow;
+  }
+  .dd-button-addrtist {
+    display: inline-block;
+    border: 2px solid rgb(240, 235, 235);
+    border-radius: 4px;
+    width: 320px;
+    color: white;
+    padding: 10px 30px 15px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .full-width-input {
+    width: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 100px;
+    border-color: white;
+
+  }
+  
+  .full-width-input-link{
+        width: 100%;
+    background-color: transparent;
+    border-radius: 5px ;
+    border-color: white;
+    color: white;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 50px;
+  }
+
+  .add-artist-btn{
+    justify-content: center;
+    margin: 20px;
+    background-color: yellow;
+    width: 150px;
+    padding:  12px 7px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+  }
+  .cancel-artist-btn{
+    margin-left: 40%;
+  }

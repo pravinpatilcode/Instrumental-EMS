@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./login.css";
 import Img from '../../Assets/Background.jpg';
-import Music from '../../Assets/music.png';
+import Music from '../../Assets/music.svg';
 import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
@@ -72,7 +72,7 @@ function Login() {
         )}
           <div className='Instrumental'>
             <img src={Music} className='music' />
-            <h1>Instrumental</h1><br />
+           <br />
           </div>
           <div className='Instrumental'>
             <h1>Log in to your Account</h1>

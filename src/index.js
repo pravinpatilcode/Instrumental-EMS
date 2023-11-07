@@ -9,9 +9,9 @@ import {
 } from "react-router-dom";
 import Login from './Auth/login/Login';
 import Signup from './Auth/signup/Signup';
-import Dashboard from './Components/Layout/Dashboard';
 import Home from './Pages/Home/Home';
 import Addpitch from './Pages/Addpitch/Addpitch';
+import Addartist from './Pages/Addartist/Addartist';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +33,10 @@ const router = createBrowserRouter([
     {
       path: "addpitch",
       element: <Addpitch/>
+    },
+    {
+      path: "addartist",
+      element: <Addartist/>
     },]
  },
 ]);

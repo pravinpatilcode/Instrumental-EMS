@@ -6,27 +6,30 @@ import User from '../../Assets/user.png'
 const Header = () => {
   return (
     <header className="header">
-      <div> 
+      <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",width:"100%"}}>
+     
+      <div style={{position:"relative"}}>
       <input type="text" className="form-control-header" id="EmailInput" name="EmailInput" placeholder="Search Here"   />
-      <small id="emailHelp" ></small> <AiOutlineSearch 
+      <small id="emailHelp" ></small>
+      <AiOutlineSearch className='search-icon-header'/>
     
-      style={{
-          width: 'auto',
-          height: '30px',
-          color: 'gray',
-          position: 'absolute',
-          left: '244px',
-          top: '33px',
-      }}
-  />
       </div>
 
+      <div style={{display:"flex",alignItems:"center",}}>
 
-      <div className='left_header'><MdOutlineNotificationAdd className='notification'/>
+         <MdOutlineNotificationAdd className='notification'/>
+      
+
+          <div className='header_img'>
+                <p className='user-name-header'>User Name Goes Here</p>
+                <a href='#' className='user-name-header-link'>User </a>
+          </div>
+
+       <img src={User} className='header_user'/>
+    
+      
       </div>
-      <div className='header_img'><p className='user-name-header'>User Name Goes Here</p> <a href='#' className='user-name-header-link'>User Pravin</a>
-      <div> 
-      </div></div><img src={User} className='header_user'/>
+      </div>
     </header>
   );
 };

@@ -83,7 +83,7 @@ function Addpitch() {
 
     </div>
 
-    <div>
+    <div style={{padding:"10px"}}>
     <div className="card-pitch">
     <div className="image-container-pitch">
       <img

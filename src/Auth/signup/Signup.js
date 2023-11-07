@@ -2,8 +2,8 @@ import React from 'react'
 import "./signup.css"
 import Img from '../../Assets/Background.jpg'
 import { useState } from 'react';
-import Music from '../../Assets/music.png'
-import { Link, useNavigate } from "react-router-dom"
+import Music from '../../Assets/music.svg'
+import { Link} from "react-router-dom"
 
 function Signup() 
   {const [isChecked, setIsChecked] = useState(false);
@@ -12,7 +12,6 @@ function Signup()
       setIsChecked(!isChecked);
     };
   
-      // console.log('Signup data:', { name, email, contact, address, password });
     
   return (
     <div >
@@ -23,7 +22,7 @@ function Signup()
    
 
         <div className='Instrumental'> <img src={Music} className='music'/>
-        <h1 >Instrumental</h1></div><br/>
+       </div><br/>
 
         
         <div className='input_con'>

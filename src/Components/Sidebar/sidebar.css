@@ -1,8 +1,8 @@
 .sidebar {
-    width: 12%;
-    height: 100vh;
+    /* width: 12%; */
+    /* height: 100vh; */
     padding: 20px;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
   }
   
   ul {
@@ -42,14 +42,10 @@
     background-color:#333;
     border-radius: 5px;
   }
-  .main_music_text{
-    font-size: 25px;
-  }
+ 
   .main_music{
     width: auto;
-    height: 25px;
-    padding-top: 18px;
-    margin-bottom: -10px;
+    height: 35px;
     
 }
 
@@ -59,5 +55,12 @@
     padding: 20px;
   justify-content: center;
   font-family:'Times New Roman', Times, serif;
+}
+
+.active {
+  /* Define your active item styles here */
+  background-color: #fff700; /* Example background color */
+  color: #060505; /* Example text color */
+ border-radius: 5px;
 }
 

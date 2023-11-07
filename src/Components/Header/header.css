@@ -4,7 +4,7 @@
     color: #fff;
     padding: 20px;
     height: 40px;
-    width: 100%;
+    width: 96%;
 
   }
 .left_header{
@@ -17,7 +17,9 @@
 }
 
 .header_img{
-  margin-left: 150px;
+  margin: 0 5px 0 65px;
+  line-height: 5px;
+  
 }
 .header_user{
   width: auto;
@@ -27,11 +29,12 @@
 
 .user-name-header{
   font-size: 10px;
+  
 }
 
 .user-name-header-link{
   font-size: 10px;
-  margin-left: 45px;
+  float:right;
 }
 
 .notification{
@@ -52,3 +55,10 @@
   box-shadow: 20px solid #b8ff12;
   transition: border-color #b8ff12 0.15s ease-in-out, box-shadow #b8ff12 0.15s ease-in-out;
 }
+.search-icon-header{
+color: gray;
+width: auto;
+height: 25px;
+position: absolute;
+left: 5px;
+top: 15px;}
