@@ -12,6 +12,8 @@ import Signup from './Auth/signup/Signup';
 import Home from './Pages/Home/Home';
 import Addpitch from './Pages/Addpitch/Addpitch';
 import Addartist from './Pages/Addartist/Addartist';
+import Settings from './Pages/Settings/Settings';
+import Payment from './Pages/Payment/Payment';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +39,14 @@ const router = createBrowserRouter([
     {
       path: "addartist",
       element: <Addartist/>
+    },,
+    {
+      path: "settings",
+      element: <Settings/>
+    },,
+    {
+      path: "payment",
+      element: <Payment/>
     },]
  },
 ]);

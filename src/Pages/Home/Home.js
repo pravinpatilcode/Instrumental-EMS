@@ -4,10 +4,9 @@ import Card from '../../Components/Common/Card/Card'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import img6 from '../../Assets/user6.jpg'
-import img2 from '../../Assets/user2.jpg'
+import img6 from '../../Assets/Background.jpg'
 import { BsMusicNoteBeamed } from "react-icons/bs";
-import { Link, useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 import  { useState, useEffect } from 'react'
 
 function Home() { 
@@ -25,7 +24,7 @@ function Home() {
         const jsonData = await response.json();
         setImages(jsonData);
       } catch (error) {
-        console.error(error);
+        console.error(error); 
       }
     }
 
@@ -52,13 +51,11 @@ console.log(Images)
 </div>
     
     <div >
-    
     <Swiper
     slidesPerView={4} style={{borderRadius:"10px"}}>
     {Images.map((item,i) => (
       <SwiperSlide key={item} className='content-swiper'>
       <img src={item.download_url}   alt=''  
-      // style={{borderRadius:" 15px ", objectFit:"cover"}}
        />
       <div className="content-overlay-swiper"></div>
 
@@ -70,7 +67,6 @@ console.log(Images)
       </SwiperSlide>
     ))}
     </Swiper>
-     
       </div>
       <br/>
       <div className="line"></div>
@@ -88,12 +84,17 @@ console.log(Images)
   <p className='home-pitch-name'>Music Name</p>
   </div>
   <div>
-  <img src={img2} className='home-pitch'/>
+  <img src={img6} className='home-pitch'/>
   <p className='home-pitch-name'>Music Name</p>
   </div>
+
+  <div className='choice-file'><div className='choice-file-btn'>+</div>
+      <input type="file" className='choice-file-opacity' />
+    </div>
   </div>
- 
- <div >  <Link to="addpitch"><button className='home-pitch-button'>Your Pitch</button></Link></div>
+ <br/>
+ <div > <button className='home-pitch-pitch-button'>View All Pitch</button>
+        <Link to="addpitch"><button className='home-pitch-button'>Add Pitch</button></Link></div>
 
 
   </div>

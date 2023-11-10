@@ -29,22 +29,10 @@
  }
 
 .home-singles{
-  color: yellow;
+  color: #E6FF00;
 
 }
 
-/* @media screen and (max-width: 640px){
-  .container{
-    display: block;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 900px){
-  .container{
-    width: 33.33333%;
-  }
-} */
 
 .content-swiper {
   position: relative;
@@ -136,12 +124,29 @@
   justify-content: center;
   margin-left: 40px;
   padding: 5px;
-  background-color: yellow;
-  width: 80px;
+  background-color: #E6FF00;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Playfair_Display variant0", Tofu;
+  border: #E6FF00  solid 1px;
   margin-bottom: 10px;
   
 }
+.home-pitch-pitch-button{
+  border: white solid 1px;
+  color: white;
+  justify-content: center;
+  margin-left: 40px;
+  font-family: "Playfair_Display variant0", Tofu;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
 
+  background-color: transparent;
+  margin-bottom: 10px;
+  
+}
 
 .popup {
   position: fixed;
@@ -170,7 +175,7 @@
 
 .popup-content button {
   padding: 10px 20px;
-  background-color: yellow;
+  background-color: #E6FF00;
   color: black;
   border: none;
   border-radius: 5px;
@@ -179,4 +184,20 @@
 
 .popup-content button:hover {
   background-color: #0056b3;
+}
+.choice-file{
+  height:72px;
+  width: 70px;
+  margin-left: 40px;
+  border: white dotted 2px;
+  border-radius: 4px;
+  display: flex;
+  cursor: pointer;
+}
+.choice-file-btn{
+  font-size: 45px;
+  padding-left: 20px;
+}
+.choice-file-opacity{
+  opacity: 0;
 }

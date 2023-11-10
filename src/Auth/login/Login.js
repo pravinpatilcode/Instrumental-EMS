@@ -62,6 +62,10 @@ function Login() {
       <div className='inner_container'>
         <img src={Img} className='img-back' />
         <div className='mid-container1'>
+
+
+        <div className='mid-inner-container'>
+
         {showPopup && (
           <div className="popup">
             <div className="popup-content">
@@ -79,12 +83,12 @@ function Login() {
           </div>
           <form className='form' onSubmit={loginSubmit}>
             <div>
-              <label htmlFor="EmailInput" className='email1'>Your email</label>
+              <label htmlFor="EmailInput" className='input-div'>Your email</label>
               <input type="text" className="form-control1" id="EmailInput" name="EmailInput" placeholder="Enter email" onChange={(event) => setUsername(event.target.value)} value={username} />
             </div>
             <br />
             <div className="form-group1">
-              <label htmlFor="exampleInputPassword1" className='email1'>Password</label>
+              <label htmlFor="exampleInputPassword1" className='input-div'>Password</label>
               <input type="password" className="form-control1" id="exampleInputPassword1" placeholder="Password" onChange={(event) => setPassword(event.target.value)} value={password} />
             </div>
             <a href="#" className="forgot">Forgot password?</a>
@@ -94,6 +98,11 @@ function Login() {
           <div className='signing_first_time'>
             <p>signing in for the first time? <Link to="/signup"><a href='#'>Click Here</a></Link> </p>
           </div>
+          </div>
+
+
+
+
         </div>
       </div>
       

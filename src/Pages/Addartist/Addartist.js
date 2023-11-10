@@ -9,6 +9,13 @@ function Addartist() {
     const handleGenderChange = (event) => {
       setSelectedGender(event.target.value);
     };
+    
+    const handleCameraClick = () => {
+      const fileInput = document.getElementById('fileInput');
+      fileInput.click();
+    };
+
+
   return (
     <div className='addartist'>
      <div>
@@ -18,37 +25,43 @@ function Addartist() {
 
 
       <div className='flex-addrtist'>
-        <div className='image-addrtist'> 
-        <div className='camera-addrtist'><AiFillCamera className='camera-height-addrtist'/></div>
-        <h4 className='yellow-color-addrtist'>Upload Your Pic</h4>
-             
-        </div>
-        
-        <div> 
+         <div className='image-addrtist'>
+         <div className='camera-addrtist' onClick={handleCameraClick}>
+         <AiFillCamera className='camera-height-addrtist' />
+         <input type="file" id="fileInput" style={{ display: 'none' }} />
+          </div>
+          <h4 className='yellow-color-addrtist'>Upload Your Pic</h4>
+          </div>
+          <div> 
+
+
            <div className='input_con_addartist'>
            <h2>Personal information</h2>
           <div className='common_div_addartist'>
            <div className='input_div_addartist'>
-             <label for="EmailInput" className='email'>Artist Name</label>
-             <input type="text" className="form-control" id="EmailInput" name="EmailInput" placeholder="Enter Name" />
-              <small id="emailHelp" ></small>
+           <div>
+              <label htmlFor="EmailInput" className='email1'>Artist name</label>
+              <input type="text" className="form-control1" id="EmailInput" name="EmailInput" placeholder="Artist name"/>
+            </div>
            </div>
            
            <div className='input_div'>
-             <label for="EmailInput" className='email'>Your email</label>
-             <input type="text" className="form-control" id="EmailInput" name="EmailInput" placeholder="Enter email" />
-              <small id="emailHelp" ></small>
+           <div>
+              <label htmlFor="EmailInput" className='email1'>Your email</label>
+              <input type="text" className="form-control1" id="EmailInput" name="EmailInput" placeholder="Enter email"/>
+            </div>
            </div>
            </div>
 
         
           <div className='common_div'>
           <div className='input_div'>
-            <label for="EmailInput" className='email'>Date Of Birth</label>
-            <input type="text" className="form-control" id="EmailInput" name="EmailInput" placeholder="Enter Date Of Birth" />
-             <small id="emailHelp" ></small>
+          <div>
+              <label htmlFor="EmailInput" className='email1'>Date of birth</label>
+              <input type="text" className="form-control1" id="EmailInput" name="EmailInput" placeholder="Select date of birth"/>
+            </div>
           </div>
-         <div>
+         <div className='gender'>
          <p>Select Gender</p>
           <div className="radio-button-container">
           <label className='radiobt-label'>
@@ -88,7 +101,7 @@ function Addartist() {
            Artist Territory
              
     <div className='flex-add-pitch'>
-    <div>
+    
     <label className="dropdown">
     
     <p>Select Country</p>
@@ -105,12 +118,8 @@ function Addartist() {
       <li>Something else here</li>
     </ul>
     
-  </label></div>
-    
-
-
-             
-    
+  </label>
+  
     <label className="dropdown">
     
     <p>Select City</p>
@@ -129,28 +138,33 @@ function Addartist() {
     
   </label>
   </div>
+
+
    <p>Artist Bio</p>
-   <div>
+   
       <input
         className="full-width-input"
         type="text"
         placeholder="Inter Artist Bio Here"
       />
-    </div>
+    
+
+
+
     
     <h2>Artist Background</h2>
+     
 
     <div className='flex-add-pitch'>
     
     <label className="dropdown">
-    <p>Genre Of Music</p>
-
-   
     
+    <p>Genre(s) of music</p>
     <div className="dd-button-addrtist">
-    <div>Select Genre Of Music</div>
     
+    Select Genre of music
     </div>
+  
     <input type="checkbox" className="dd-input" id="test"/>
   
     <ul className="dd-menu">
@@ -160,28 +174,41 @@ function Addartist() {
     </ul>
     
   </label>
-   
-    <div className='input_div'>
-    <p>Year Of Music Experince</p>
-
-      <input type="text" className="form-control" id="EmailInput" name="EmailInput" placeholder="Enter Year Of Music Experince" />
-       <small id="emailHelp" ></small>
+  
+    <label className="dropdown">
+    
+    <p>Yeare of Music Experience </p>
+    <div className="dd-button-addrtist">
+    
+    Select Yeare of Music Experience 
     </div>
   
-      </div>
+    <input type="checkbox" className="dd-input" id="test"/>
+  
+    <ul className="dd-menu">
+      <li>Action</li>
+      <li>Another action</li>
+      <li>Something else here</li>
+    </ul>
+    
+  </label>
+  </div>
+
+
+
       </div>
 
       <h2>Links</h2>
       <div className='common_div_addartist'>
       <div className='input_div_addartist'>
         <label for="EmailInput" className='email'>Instagram</label>
-        <input type="text" className="form-control" id="EmailInput" name="EmailInput" placeholder="Enter Link Here" />
+        <input type="text" className="form-control1 " id="EmailInput" name="EmailInput" placeholder="Enter Link Here" />
          <small id="emailHelp" ></small>
       </div>
       
       <div className='input_div'>
         <label for="EmailInput" className='email'>Facebook</label>
-        <input type="text" className="form-control" id="EmailInput" name="EmailInput" placeholder="Enter Link Here" />
+        <input type="text" className="form-control1 " id="EmailInput" name="EmailInput" placeholder="Enter Link Here" />
          <small id="emailHelp" ></small>
       </div>
       </div>

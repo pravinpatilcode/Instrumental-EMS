@@ -1,10 +1,11 @@
 import React from 'react'
 import './addpitch.css';
 import { Link } from 'react-router-dom';
-import img4 from '../../Assets/user4.jpg';
-import img5 from '../../Assets/user5.jpg';
+import img4 from '../../Assets/music1.png';
+import img5 from '../../Assets/Background.jpg';
 import {IoCheckmarkDoneCircleSharp } from "react-icons/io5";
 import {IoCheckmarkDone } from "react-icons/io5";
+import { AiFillCloseCircle} from "react-icons/ai";
 
 function Addpitch() {
   return (
@@ -105,17 +106,17 @@ function Addpitch() {
           <p className='small-font-addpitch'> Pravin Patil</p>
           <p className='small-font-addpitch'> Arijit Singh</p>
           <p className='small-font-addpitch'> 06/05/2000</p>
-          <p className='small-font-addpitch'> <a href='#'>Not Completed Yet </a> </p>
+          <p className='small-font-addpitch'> <a href='#' className='small-font-addpitch-red'>Not Completed Yet </a> </p>
         </div>
       </div>
     </div>
      
    
     <div className="buttons-pitch">
-    <button className="buttons-pitch-card"> <IoCheckmarkDoneCircleSharp/> Button 2</button>
-    <button className="buttons-pitch-card"> <IoCheckmarkDoneCircleSharp/> Button 2</button>
-    <button className="buttons-pitch-card"> <IoCheckmarkDoneCircleSharp/> Button 2</button>
-    <button className="buttons-pitch-card"> <IoCheckmarkDone /> Button 2</button>
+    <button className="buttons-pitch-card"> <IoCheckmarkDoneCircleSharp className='btn-green'/> Spotify</button>
+    <button className="buttons-pitch-card"> <IoCheckmarkDoneCircleSharp className='btn-green'/> i-Tunes</button>
+    <button className="buttons-pitch-card"> <IoCheckmarkDoneCircleSharp className='btn-green'/> Deezer</button>
+    <button className="buttons-pitch-card"> <AiFillCloseCircle className='btn-red'/> Amazon Music</button>
      <div className='retry-pitch-div'><button  className="retry-pitch">Retry</button></div>
     </div> 
     </div>
@@ -142,17 +143,16 @@ function Addpitch() {
           <p className='small-font-addpitch'> Pravin Patil</p>
           <p className='small-font-addpitch'> yo yo honey</p>
           <p className='small-font-addpitch'> 01/06/2001</p>
-          <p className='small-font-addpitch'> <a href='#'>Completed </a> </p>
+          <p className='small-font-addpitch'> <a href='#' className='small-font-addpitch-green'>Completed </a> </p>
         </div>
       </div>
     </div>
      
-   
     <div className="buttons-pitch">
-    <button className="buttons-pitch-card"> <IoCheckmarkDoneCircleSharp/> Button 2</button>
-    <button className="buttons-pitch-card"> <IoCheckmarkDoneCircleSharp/> Button 2</button>
-    <button className="buttons-pitch-card"> <IoCheckmarkDoneCircleSharp/> Button 2</button>
-    <button className="buttons-pitch-card"> <IoCheckmarkDoneCircleSharp/> Button 2</button>
+    <button className="buttons-pitch-card"> <IoCheckmarkDoneCircleSharp className='btn-green'/> Spotify</button>
+    <button className="buttons-pitch-card"> <IoCheckmarkDoneCircleSharp className='btn-green'/> i-Tunes</button>
+    <button className="buttons-pitch-card"> <IoCheckmarkDoneCircleSharp className='btn-green'/> Deezer</button>
+    <button className="buttons-pitch-card"> <IoCheckmarkDoneCircleSharp  className='btn-green'/> Amazon Music</button>
      <div className='retry-pitch-div'><button  className="retry-pitch">View</button></div>
     </div> 
      </div>

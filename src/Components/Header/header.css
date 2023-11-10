@@ -48,6 +48,7 @@
   padding: 0.375rem 1.87rem;
   font-size: 20px;
   line-height: 1.5;
+  font-size: 15px;
   color: #b8ff12;
   background-color: transparent;
   border: 1px solid white;
@@ -58,7 +59,7 @@
 .search-icon-header{
 color: gray;
 width: auto;
-height: 25px;
+height: 22px;
 position: absolute;
 left: 5px;
-top: 15px;}
+top: 13px;}

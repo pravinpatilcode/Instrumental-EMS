@@ -1,8 +1,5 @@
 .sidebar {
-    /* width: 12%; */
-    /* height: 100vh; */
     padding: 20px;
-    /* border: 1px solid gray; */
   }
   
   ul {
@@ -13,7 +10,7 @@
   li {
     margin-bottom: 10px;
     cursor: pointer;
-    color: #f7ff05;
+    color: #E6FF00;
     padding: 9px;
     padding-left: 20px;
 
@@ -51,16 +48,23 @@
 
 .main_Instrumental{
     display: flex;
-    margin-top: 20px;
+    margin-top: -10px;
     padding: 20px;
-  justify-content: center;
-  font-family:'Times New Roman', Times, serif;
+    justify-content: center;
+    font-family:'Times New Roman', Times, serif;
 }
 
 .active {
-  /* Define your active item styles here */
-  background-color: #fff700; /* Example background color */
-  color: #060505; /* Example text color */
+
+  background-color: #E6FF00; 
+  color: #060505; 
  border-radius: 5px;
 }
 
+.sidebar-line {
+  border-top: 1px solid grey;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 5px;
+  padding-bottom: 4px;
+}

@@ -1,146 +1,167 @@
-import React from 'react'
-import "./signup.css"
-import Img from '../../Assets/Background.jpg'
-import { useState } from 'react';
-import Music from '../../Assets/music.svg'
-import { Link} from "react-router-dom"
-
-function Signup() 
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './signup.css';
+import Img from '../../Assets/Background.jpg';
+import Music from '../../Assets/music.svg';
+function Signup() {
+ 
   {const [isChecked, setIsChecked] = useState(false);
 
     const handleCheckboxChange = () => {
       setIsChecked(!isChecked);
     };
-  
-    
+
   return (
-    <div >
-      <div className='inner_container_div'>
-          <img src={Img} className='signup_back'/>
+    <div>
+      <div className="inner_container_div">
+        <img src={Img} className="signup_back" alt="background" />
 
-        <div className='signup_form'>
-   
-
-        <div className='Instrumental'> <img src={Music} className='music'/>
-       </div><br/>
-
-        
-        <div className='input_con'>
-          <div className='common_div'>
-           <div className='input_div'>
-             <label for="EmailInput" className='email'>Your Name</label>
-             <input type="text" className="form-control" id="EmailInput" name="EmailInput" placeholder="Enter Name" />
-              <small id="emailHelp" ></small>
-           </div>
-           
-           <div className='input_div'>
-             <label for="EmailInput" className='email'>Your email</label>
-             <input type="text" className="form-control" id="EmailInput" name="EmailInput" placeholder="Enter email" />
-              <small id="emailHelp" ></small>
-           </div>
-           </div>
-
-        
-          <div className='common_div'>
-          <div className='input_div'>
-            <label for="EmailInput" className='email'>Your Contact</label>
-            <input type="text" className="form-control" id="EmailInput" name="EmailInput" placeholder="Enter Contact" />
-             <small id="emailHelp" ></small>
+        <form className="signup_form" >
+          <div className="Instrumental">
+            <img src={Music} className="music" alt="music" />
           </div>
-          
-          <div className='input_div'>
-            <label for="EmailInput" className='email'>Your Address</label>
-            <input type="text" className="form-control" id="EmailInput" name="EmailInput" placeholder="Enter Address" />
-             <small id="emailHelp" ></small>
-          </div>
+          <br />
+
+          <div className="input_content">
+            <div className="common_div">
+            <div>
+            <label htmlFor="EmailInput" className='input-div'>Label Name</label>
+            <input type="text" className="form-control1" id="EmailInput" name="EmailInput" placeholder="Label Name Goes Here"  />
           </div>
 
-          <div className='common_div_ex'>
-          <div className='input_div'>
-            <label for="EmailInput" className='email'>Registeded no.</label>
-            <input type="text" className="form-control" id="EmailInput" name="EmailInput" placeholder="Enter number" />
-             <small id="emailHelp" ></small>
-          </div>
-          </div>  
+              <div className="input_div">
+              <div>
+              <label htmlFor="EmailInput" className='input-div'>Label Email</label>
+              <input type="text" className="form-control1" id="EmailInput" name="EmailInput" placeholder="Enter email Here"  />
+            </div>
+              </div>
+            </div>
+            <div className="common_div">
+              <div className="input_div">
+              <div>
+              <label htmlFor="EmailInput" className='input-div'>Content Number</label>
+              <input type="text" className="form-control1" id="EmailInput" name="EmailInput" placeholder="Enter Content Number"  />
+            </div>
+              </div>
 
+              <div className="input_div">
+              <div>
+              <label htmlFor="EmailInput" className='input-div'>Address</label>
+              <input type="text" className="form-control1" id="EmailInput" name="EmailInput" placeholder="Enter Address Here"  />
+            </div>
+              </div>
+            </div>
+            <div className="input_div">
+            <div>
+            <label htmlFor="EmailInput" className='input-div'>Resistration Number</label>
+            <input type="text" className="form-control1" id="EmailInput" name="EmailInput" placeholder="Enter Resistration Number"  />
+          </div>
+          </div>
+            
+            
 
-          <h3>Spotify</h3>
-          <div className='common_div'>
-          <div className='input_div'>
-            <label for="EmailInput" className='email'>Set Passward</label>
-            <input type="text" className="form-control" id="EmailInput" name="EmailInput" placeholder="Enter Passward" />
-             <small id="emailHelp" ></small>
-          </div>
-          
-          <div className='input_div'>
-            <label for="EmailInput" className='email'>Passward</label>
-            <input type="text" className="form-control" id="EmailInput" name="EmailInput" placeholder="Confirm Passward" />
-             <small id="emailHelp" ></small>
-          </div>
-          </div><div>
+            
+            <h3>Spotify</h3>
+            <div className="common_div">
+              <div className="input_div">
+              <div>
+              <label htmlFor="EmailInput" className='input-div'> Email</label>
+              <input type="text" className="form-control1" id="EmailInput" name="EmailInput" placeholder=" email"  />
+            </div>
+              </div>
+              <div>
+              <label htmlFor="EmailInput" className='input-div'>Passward</label>
+              <input type="text" className="form-control1" id="EmailInput" name="EmailInput" placeholder="Passward"  />
+            </div>
+         
+
+            </div>
+            <div>
+            <div>
           <input
             type="checkbox"
             checked={isChecked}
             onChange={handleCheckboxChange}
+            className="checkmark"
           />
           <label>click here to varify</label>
         </div>
+            
+          </div>
+
 
           <h3>Deezer</h3>
-          <div className='common_div'>
-          <div className='input_div'>
-            <label for="EmailInput" className='email'>Original I'D</label>
-            <input type="text" className="form-control" id="EmailInput" name="EmailInput" placeholder="Inter Original I'D" />
-             <small id="emailHelp" ></small>
-          </div>
-          </div><div>
+            <div className="common_div">
+              <div className="input_div">
+              <div>
+              <label htmlFor="EmailInput" className='input-div'>Your email</label>
+              <input type="text" className="form-control1" id="EmailInput" name="EmailInput" placeholder="Enter email"  />
+            </div>
+              </div>
+          
+            </div>
+            <div>
+            <div>
           <input
             type="checkbox"
             checked={isChecked}
             onChange={handleCheckboxChange}
+            className="checkmark"
           />
           <label>click here to varify</label>
         </div>
+            
+          </div>
 
           <h3>Amazon Music</h3>
-          <div className='common_div'>
-          <div className='input_div'>
-            <label for="EmailInput" className='email'>Your email</label>
-            <input type="text" className="form-control" id="EmailInput" name="EmailInput" placeholder="Enter email" />
-             <small id="emailHelp" ></small>
-          </div>
-          
-          <div className='input_div'>
-            <label for="EmailInput" className='email'>Your Passward</label>
-            <input type="text" className="form-control" id="EmailInput" name="EmailInput" placeholder="Passward" />
-             <small id="emailHelp" ></small>
-          </div>
-          </div><div>
+            <div className="common_div">
+              <div className="input_div">
+              <div>
+              <label htmlFor="EmailInput" className='input-div'>Your email</label>
+              <input type="text" className="form-control1" id="EmailInput" name="EmailInput" placeholder="Enter email"  />
+            </div>
+              </div>
+              <div>
+              <label htmlFor="EmailInput" className='input-div'>Password</label>
+              <input type="text" className="form-control1" id="EmailInput" name="EmailInput" placeholder="Password"  />
+            </div>
+         
+
+            </div>
+            <div>
+            <div>
           <input
             type="checkbox"
             checked={isChecked}
-            onChange={handleCheckboxChange} className='checkbox' />
+            onChange={handleCheckboxChange}
+            className="checkmark"
+          />
           <label>click here to varify</label>
         </div>
-
+            
+          </div>
 
           <h3>Apple Music</h3>
-          <div className='common_div' >
-          <div className='input_div' style={{marginBottom:"40px"}}>
-            <label for="EmailInput" className='email'>Your email</label>
-            <input type="text" className="form-control" id="EmailInput" name="EmailInput" placeholder="Enter email" />
-             <small id="emailHelp" ></small> 
+            <div className="common_div">
+              <div className="input_div">
+              <div>
+              <label htmlFor="EmailInput" className='input-div'>Password</label>
+              <input type="text" className="form-control1" id="EmailInput" name="EmailInput" placeholder="Password"  />
+            </div>
+              </div>
+              
+            </div>
           </div>
-         
-          </div> <Link to="/dashboard">
-          <button type="submit" className="signup">SignUp</button></Link>
-          
-          </div>
-         
-        </div>
-      </div>     
+<br/>
+          <Link to="/dashboard" className='link-add'>
+            <button type="submit" className="signup-btn">
+              Sign Up
+            </button>
+          </Link>
+        </form>
+      </div>
     </div>
-  )
-
-};
-export default Signup
+  );
+}
+}
+export default Signup;
